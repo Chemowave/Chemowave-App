@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="MOM-wv-s3L">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--Dashboard-->
+        <scene sceneID="KKo-9b-EQC">
+            <objects>
+                <viewController id="98D-va-9gD" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="vTA-B5-yjw"/>
+                        <viewControllerLayoutGuide type="bottom" id="Nx0-KZ-EdN"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Tir-sS-GIY">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Dashboard" id="t9n-gF-uUD"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gGq-Mt-F5i" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1297.5" y="393"/>
+        </scene>
+        <!--dashboardNavController-->
+        <scene sceneID="BAu-He-rJr">
+            <objects>
+                <navigationController storyboardIdentifier="dashboardNavController" automaticallyAdjustsScrollViewInsets="NO" id="MOM-wv-s3L" userLabel="dashboardNavController" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Dashboard" image="validIcon" id="VN3-oF-b2G"/>
+                    <toolbarItems/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="nZq-Wh-8eK">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="98D-va-9gD" kind="relationship" relationship="rootViewController" id="c8I-Xj-2ue"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qBE-O3-6gh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="379.5" y="393"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="validIcon" width="24" height="24"/>
+    </resources>
+</document>

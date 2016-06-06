@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ActionSheetView" customModule="Chemowave" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yAg-gW-tYs">
+                    <rect key="frame" x="170" y="8" width="260" height="89"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uc6-G7-dlC">
+                            <rect key="frame" x="-149" y="0.0" width="409" height="43"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="42" id="rcQ-YX-as2"/>
+                            </constraints>
+                            <state key="normal" title="Take a Photo"/>
+                            <variation key="default">
+                                <mask key="constraints">
+                                    <exclude reference="rcQ-YX-as2"/>
+                                </mask>
+                            </variation>
+                            <variation key="heightClass=regular-widthClass=compact">
+                                <mask key="constraints">
+                                    <include reference="rcQ-YX-as2"/>
+                                </mask>
+                            </variation>
+                            <connections>
+                                <action selector="cameraButtonPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="gn6-oR-s4F"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jCZ-FX-DWB">
+                            <rect key="frame" x="16" y="43" width="229" height="3"/>
+                            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="2" id="tsv-5Z-opj"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                            <variation key="default">
+                                <mask key="constraints">
+                                    <exclude reference="tsv-5Z-opj"/>
+                                </mask>
+                            </variation>
+                            <variation key="heightClass=regular-widthClass=compact">
+                                <mask key="constraints">
+                                    <include reference="tsv-5Z-opj"/>
+                                </mask>
+                            </variation>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XDe-Rn-Dpd">
+                            <rect key="frame" x="1" y="46" width="260" height="43"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <state key="normal" title="Choose from Camera Roll"/>
+                            <connections>
+                                <action selector="cameraRollButtonPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="Mfa-d0-85W"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="0.80000001190000003" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="XDe-Rn-Dpd" firstAttribute="top" secondItem="jCZ-FX-DWB" secondAttribute="bottom" id="8m0-j1-OIc"/>
+                        <constraint firstAttribute="trailing" secondItem="jCZ-FX-DWB" secondAttribute="trailing" constant="22" id="Bgl-km-Qan"/>
+                        <constraint firstItem="jCZ-FX-DWB" firstAttribute="top" secondItem="uc6-G7-dlC" secondAttribute="bottom" constant="1" id="KkP-mh-gwP"/>
+                        <constraint firstItem="XDe-Rn-Dpd" firstAttribute="leading" secondItem="uc6-G7-dlC" secondAttribute="leading" id="WS7-pT-Bvn"/>
+                        <constraint firstItem="XDe-Rn-Dpd" firstAttribute="height" secondItem="uc6-G7-dlC" secondAttribute="height" id="WlR-QM-ScY"/>
+                        <constraint firstItem="XDe-Rn-Dpd" firstAttribute="trailing" secondItem="uc6-G7-dlC" secondAttribute="trailing" id="a52-VU-WkZ"/>
+                        <constraint firstItem="jCZ-FX-DWB" firstAttribute="leading" secondItem="yAg-gW-tYs" secondAttribute="leading" constant="22" id="aTb-UD-juq"/>
+                        <constraint firstAttribute="trailing" secondItem="uc6-G7-dlC" secondAttribute="trailing" id="bn3-8C-spV"/>
+                        <constraint firstItem="uc6-G7-dlC" firstAttribute="leading" secondItem="yAg-gW-tYs" secondAttribute="leading" id="nzU-Fr-76e"/>
+                        <constraint firstAttribute="height" constant="89" id="p0q-hF-Cwo"/>
+                        <constraint firstItem="uc6-G7-dlC" firstAttribute="top" secondItem="yAg-gW-tYs" secondAttribute="top" id="td1-MX-6ik"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="bn3-8C-spV"/>
+                            <exclude reference="nzU-Fr-76e"/>
+                            <exclude reference="td1-MX-6ik"/>
+                            <exclude reference="8m0-j1-OIc"/>
+                            <exclude reference="WS7-pT-Bvn"/>
+                            <exclude reference="WlR-QM-ScY"/>
+                            <exclude reference="a52-VU-WkZ"/>
+                            <exclude reference="Bgl-km-Qan"/>
+                            <exclude reference="KkP-mh-gwP"/>
+                            <exclude reference="aTb-UD-juq"/>
+                        </mask>
+                    </variation>
+                    <variation key="heightClass=regular-widthClass=compact">
+                        <mask key="constraints">
+                            <include reference="bn3-8C-spV"/>
+                            <include reference="nzU-Fr-76e"/>
+                            <include reference="td1-MX-6ik"/>
+                            <include reference="8m0-j1-OIc"/>
+                            <include reference="WS7-pT-Bvn"/>
+                            <include reference="WlR-QM-ScY"/>
+                            <include reference="a52-VU-WkZ"/>
+                            <include reference="Bgl-km-Qan"/>
+                            <include reference="KkP-mh-gwP"/>
+                            <include reference="aTb-UD-juq"/>
+                        </mask>
+                    </variation>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="0.80000001190000003" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="yAg-gW-tYs" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="8" id="Paa-Nf-DPx"/>
+                <constraint firstAttribute="trailing" secondItem="yAg-gW-tYs" secondAttribute="trailing" constant="8" id="iQx-QO-Xj3"/>
+                <constraint firstItem="yAg-gW-tYs" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="lEY-d4-QDZ"/>
+                <constraint firstItem="yAg-gW-tYs" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="sxv-t3-dHH"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="iQx-QO-Xj3"/>
+                    <exclude reference="sxv-t3-dHH"/>
+                </mask>
+            </variation>
+            <variation key="heightClass=regular-widthClass=compact">
+                <mask key="constraints">
+                    <include reference="iQx-QO-Xj3"/>
+                    <include reference="sxv-t3-dHH"/>
+                </mask>
+            </variation>
+        </view>
+    </objects>
+</document>
